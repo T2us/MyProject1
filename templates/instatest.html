@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Insta</h1>
+    <form action="/view" method="post">
+        <p>사진 선택 후 버튼 클릭</p>
+        {% for pic in pics %}
+        <input src="{{ url_for('static', filename="cropimg/"+pic) }}" type="image" id="filename" name="filename" value={{pic}} onclick=doView('{{pic}}') width="150" height="150">
+        {% endfor %}
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>
+

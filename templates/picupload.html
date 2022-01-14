@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Picture Searching</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+<body>
+    <p> </p>
+    <p align="center" style="font-size:40px;"> Picture Searching </p>
+    <p align="center" style="font-size:20px;">Please choose a picture.</p>
+    <div style="text-align: center;">
+        {% for pic in pics %}
+        <a href="/fileview?filename='{{pic}}'">
+            <img src="{{ url_for('static', filename="cropPic/"+pic) }}" type="submit" id="filename" name="filename" value={{pic}} width="150" height="150">
+        </a>
+        {% endfor %}
+    </div>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+</body>
+</html>
+

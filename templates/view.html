@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Insta Searching</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+<body>
+    <p> </p>
+    <p align="center" style="font-size:40px;"> Result </p>
+    <div style="text-align: center; height:750px;">
+        <a href="/main">
+            <img type="image" src="{{ url_for('static', filename='result/result.png') }}" style="padding-right:9.0em;">
+        </a>
+    </div>
+        <form>
+            <button type="button" onclick="location.href='{{one}}'" style="width: 100px; height: 80px; padding: 10px; position: absolute; left:240px; top:430px;">1st similar one</button>
+            <button type="button" onclick="location.href='{{two}}'" style="width: 100px; height: 80px; padding: 10px; position: absolute; left:240px; top:620px;">2nd similar one</button>
+            <button type="button" onclick="location.href='{{three}}'" style="width: 100px; height: 80px; padding: 10px; position: absolute; left:240px; top:810px;">3rd similar onek</button>
+        </form>
+</body>
+</html>
+

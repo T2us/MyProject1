@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>Insta Searching</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <p> </p>
+        <p>　</p>
+        <p>　</p>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#second">Choose a way</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+
+        <div id="main">
+            <!-- Second Section -->
+            <section id="second" class="main special">
+                <ul class="statistics">
+                    <li class="style1">
+                        <img src="{{url_for('static', filename='logo/instalogo.png')}}" onclick="location.href='/jsontest'" width="40" />
+                        <a href="/jsontest">Instagram </a>
+                    </li>
+                    <li class="style2">
+                        <img src="{{url_for('static', filename='logo/imagelogo.svg')}}" onclick="location.href='/pic'" width="40" />
+                        <a href="/pic">Picture</a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='assets/js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/jquery.scrollex.min.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/jquery.scrolly.min.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/browser.min.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/breakpoints.min.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/util.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/main.js')}}"></script>
+
+</body>
+
+</html>
+

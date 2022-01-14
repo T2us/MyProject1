@@ -1,0 +1,30 @@
+<!doctype html>
+<head>
+    <title>Insta Searching</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+<body>
+    <p> </p>
+    <p align="center" style="font-size:40px;"> Who are you curious about?</p>
+    <form action="/post" method="post">
+        <p align="center" style="font-size:20px;">Enter Instagram ID</p>
+        <div style="text-align: center;">
+            <input type="text" id="input" name="input" placeholder="Enter Instagram ID">
+        </div>
+        <p> </p>
+        <p align="center" style="font-size:20px;"> Enter the number of posts you want</p>
+        <div style="text-align: center;">
+            <input type="text" id="wish" name="wish" placeholder="Enter the number of posts you want">
+            <p></p>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+    <p>　</p>
+</body>
+</html>
+

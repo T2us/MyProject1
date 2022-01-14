@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+<body>
+    <p> </p>
+    <p align="center" style="font-size:40px;"> Insta Searching </p>
+    <p align="center"  style="font-size:20px;">Finised Crawling.  Please choose a picture.</p>
+    <div style="text-align: center;">
+        {% for pic in pics %}
+        <a href="/view?filename='{{pic}}'">
+            <img src="{{ url_for('static', filename="cropimg/"+pic) }}" type="submit" id="filename" name="filename" value={{pic}} width="150" height="150">
+        </a>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
